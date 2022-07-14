@@ -15,30 +15,19 @@
         </div>
         <div class="main">
             <div class="controls">
-                <button class="control">Clear</button>
-                <button class="control">Rainbow</button>
-                <button class="control">Eraser</button>
-                <label for="color" class="control">Color</label>
-                <input type="color" id="color"></input>
+                <button class="control" id="clear">Clear</button>
+                <button class="control" id="rainbow">Rainbow</button>
+                <button class="control" id="eraser">Eraser</button>
+                <div class="control color-picker">
+                    <label for="color">Color</label>
+                    <input type="color" id="color"></input>
+                </div>
             </div>
             </div>
             <div class="drawing">
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
+            </div>
+            <div class="slider-container">
+                <input type="range" min="1" max="100" value="50" step= "1" class="slider">
             </div>
         </div>
     </div>
