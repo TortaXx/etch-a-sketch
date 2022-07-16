@@ -85,6 +85,13 @@ function removePixels() {
         pixel.remove();
     }
 }
+
+function changeSliderDisplay(value) {
+    const sliderVal = document.querySelector(".slider-value");
+    sliderVal.textContent = `${value}x${value}`;
+    
+}
+
 function main() {
     const slider = document.querySelector(".slider");
     generateDivs(Number(slider.value));
@@ -93,8 +100,12 @@ function main() {
     slider.addEventListener("input", () => {
         removePixels();
         generateDivs(Number(slider.value));
+        changeSliderDisplay(slider.value);
         draw();
     });
 }
+
+const sliderVal = document.querySelector(".slider-value");
+console.log(sliderVal.textContent);
 
 main();
